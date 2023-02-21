@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <title>Degree Compare</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='coursera.png') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='cousera.png') }}" class="icon" />
+  <h3>Extract degree features</h3>
+  <form action="/" method="post">
+    <input type="text" name="degree" placeholder="Enter a degree slug" required />
+    <input type="submit" value="Extract key features" />
+  </form>
+
+  <h3>Ask me anything</h3>
+  <form action="/ama" method="post">
+    <input type="text" name="ama" placeholder="Enter your question" required />
+    <input type="submit" value="Submit" />
+  </form>
+  {% if result %}
+  <div class="result">{{ result }}</div>
+  {% endif %}
+</body>

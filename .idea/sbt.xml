@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="customVMEnabled" value="true" />
+    <option name="customVMPath" value="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home" />
+    <option name="maximumHeapSize" value="16000" />
+    <option name="vmParameters" value="-Xss128m -Xms2048m -Xmx16000m -XX:ReservedCodeCacheSize=1024m -XX:+UseCodeCacheFlushing -XX:+UseCompressedOops" />
+  </component>
+</project>
